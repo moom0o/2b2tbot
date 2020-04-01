@@ -145,7 +145,7 @@ function bindEvents(bot) {
   });
 }
 bot.on('kicked', function(reason) {
-  console.log("I got kicked for", reason, "lol");
+  console.log("I got kicked for ", reason, " lol");
   });
 
   bot.on('end', function() {

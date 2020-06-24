@@ -3,11 +3,11 @@
     "prefix": "!",
     "ip": "2b2t.org",
     "port": "25565",
-    "username": "stevie0985",
-    "password": "password1",
+    "username": "",
+    "password": "",
     "version": "1.12.2",
-    "chatchannelid": "596225012328038411",
-    "guildid": "578342042178945044",
-    "userid": "253266621349494784",
+    "chatchannelid": "",
+    "guildid": "",
+    "userid": "",
     "loginmessage": ""
 }

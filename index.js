@@ -34,12 +34,12 @@ bot.on('login', () => {
 //  }});
 //    });
 bot.on('chat', function(username, message) {
-  if(!message.startsWith("!")) return;
+  if(!message.startsWith(config.prefix)) return;
   if(cooldown.has("active")){
-  return console.log("active")
+	return console.log("active")
   }
-  if (message.startsWith("!coords")){
-    console.log(username, message)
+  if (message.startsWith(config.prefix + 'coords')){
+	console.log(username, message)
     if (username === bot.username) {
       return;
   }
@@ -49,7 +49,7 @@ bot.on('chat', function(username, message) {
     cooldown.delete("active")
   }, cdseconds * 1000)
 }
-  if (message.startsWith('!sleep')){
+  if (message.startsWith(config.prefix + 'sleep')){
     console.log(username, message)
 
   if (username === bot.username) {
@@ -70,7 +70,7 @@ bot.on('chat', function(username, message) {
 };
   }
 
-  if (message.startsWith('!time')){
+  if (message.startsWith(config.prefix + 'time')){
     console.log(username, message)
 
   if (username === bot.username) {
@@ -145,7 +145,7 @@ function bindEvents(bot) {
   });
 }
 bot.on('kicked', function(reason) {
-  console.log("I got kicked for", reason, "lol");
+  console.log("I got kicked for ", reason, " lol");
   });
 
   bot.on('end', function() {
